@@ -6,7 +6,8 @@ const schema = new Schema(
         name: String,
         created_on: Date,
         price: Number,
-        ingredients: Array
+        ingredients: Array,
+        picture: String
     },
     {},
     {

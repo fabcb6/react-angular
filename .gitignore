@@ -1,6 +1,6 @@
 node/server/node_modules/
 node/server/package-lock.json
 angular/client/node_modules/
-node/client/package-lock.json
+angular/client/package-lock.json
 react/admin/node_modules/
-node/admin/package-lock.json
+react/admin/package-lock.json

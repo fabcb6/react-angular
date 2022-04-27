@@ -27,7 +27,7 @@ exports.get = async (req, res) => {
 };
 exports.create = async (req, res) => {
     const { body } = req;
-    const { name, price, ingredients } = body;
+    const { name, price, ingredients, picture } = body;
     try {
         const _id = await randomUUID();
         const newPizzas = new Pizzas({
@@ -35,6 +35,7 @@ exports.create = async (req, res) => {
             name, 
             price, 
             ingredients,
+            picture,
             created_on: new Date()
         });
         await newPizzas.save();

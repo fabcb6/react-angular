@@ -1,0 +1,12 @@
+<div>
+  <mat-card class="example-card" *ngFor="let pizza of pizzas">
+    <mat-card-title-group>
+      <mat-card-title>{{ pizza.name }}</mat-card-title>
+      <mat-card-subtitle>{{ pizza.price }}</mat-card-subtitle>
+      <img mat-card-md-image src="{{ pizza.picture }}" />
+    </mat-card-title-group>
+    <mat-card-content>
+      {{ pizza.ingredients.join(',') }}
+    </mat-card-content>
+  </mat-card>
+</div>
